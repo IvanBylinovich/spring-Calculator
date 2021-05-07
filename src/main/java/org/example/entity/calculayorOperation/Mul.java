@@ -6,13 +6,24 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Mul implements Operation {
+    int a, b, result;
+
     @Override
     public void calc() {
         ConsoleWriter.messageWriter("Enter num1" );
-        int a = ConsoleReader.readNum();
+        a = ConsoleReader.readNum();
         ConsoleWriter.messageWriter("Enter num2" );
-        int b = ConsoleReader.readNum();
-        int result = a * b;
+        b = ConsoleReader.readNum();
+        result = a * b;
         ConsoleWriter.messageWriter("Result " + result);
+    }
+
+    @Override
+    public String toString() {
+        return "Div{" +
+                "a=" + a +
+                ", b=" + b +
+                ", result=" + result +
+                '}';
     }
 }

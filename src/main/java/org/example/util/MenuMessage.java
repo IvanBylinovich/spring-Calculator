@@ -7,6 +7,7 @@ public class MenuMessage {
                 "2 : - \n" +
                 "3 : * \n" +
                 "4 : / \n" +
+                "5 : HISTORY \n" +
                 "0 exit");
     }
     public static void showExitMessage(){
